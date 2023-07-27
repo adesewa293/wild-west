@@ -19,7 +19,7 @@ function survive(request, response) {
     response.status(404).json
   }
 }catch (error) {
-  response.status(200).json(outcome)
+  response.status(500).json(error)
 }
 }
 
