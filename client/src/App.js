@@ -6,7 +6,7 @@ function App() {
   const [outcome, setOutcome] = useState("");
   
   async function handleSurvive() {
-    const API = "http://localhost:8080/survive";
+    const API = "https://wild-west-api.onrender.com/survive";
     const res = await axios.get(API);
     setOutcome(res.data);
      console.log('outcome', outcome)

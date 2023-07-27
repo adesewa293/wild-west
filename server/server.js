@@ -8,7 +8,8 @@ const survive = require("./library/survive")
 const maths = require("./library/maths")
 
 app.get("/", (request, response)=>{
-  console.log(response.json('you found my root document'))
+ response.json('you found my root document')
+
 });
 
 app.get("/survive", survive);
